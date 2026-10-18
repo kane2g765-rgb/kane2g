@@ -46,6 +46,25 @@
     }
     footer { text-align: center; padding: 30px; background: #24213b; color: white; }
     a { color: #725184; }
+    
+@media screen and (max-width: 600px) {
+  .novels-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 420px !important;
+    gap: 24px !important;
+  }
+
+  .novels-grid .card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .novels-grid .card h3 {
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -183,7 +202,7 @@
   </h3>
 
   <!-- 上段：おすすめ3作品 -->
-  <div style="display:grid;
+<div class="novels-grid" style="display:grid;
               grid-template-columns:repeat(3,minmax(0,1fr));
               gap:20px;
               max-width:900px;
@@ -241,7 +260,7 @@
   </h3>
 
   <!-- 下段：その他2作品 -->
-  <div style="display:grid;
+<div class="novels-grid" style="display:grid;
               grid-template-columns:repeat(2,minmax(0,1fr));
               gap:25px;
               max-width:580px;
