@@ -83,7 +83,25 @@ header nav {
   }
 }
 
+/* ホバー時の動き */
+.hero img,
+#works img,
+#about img,
+#sns img {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  cursor: pointer;
+}
+
+.hero img:hover,
+#works img:hover,
+#about img:hover,
+#sns img:hover {
+  transform: scale(1.05);
+  opacity: 0.75;
+}
+    
   </style>
+  
 </head>
 <body>
 
