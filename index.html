@@ -29,11 +29,20 @@
       font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
       line-height: 1.9;
     }
-    header {
-      background: #24213b;
-      color: white;
-      padding: 24px 7%;
-    }
+    
+header {
+  background: #24213b;
+  color: white;
+  padding: 24px 7%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  justify-content: flex-end;
+}
+    
     header h1 { margin: 0; font-size: 26px; }
     nav { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 20px; }
     nav a { color: white; text-decoration: none; }
